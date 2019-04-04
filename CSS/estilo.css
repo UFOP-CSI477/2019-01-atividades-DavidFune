@@ -1,0 +1,36 @@
+table {
+	width: 100%;
+}
+
+table ,th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+
+}
+
+th, td{
+	padding: 10px;
+}
+
+tbody tr:hover/*efeito de passar o mause*/ {
+	background: rgb(156, 133, 133);
+}
+
+thead tr:hover{
+	background:  #b8b894;
+
+}
+
+tfoot tr:hover{
+
+	background: #5a5a52;
+}
+
+tbody td:hover{
+	color: #66ff33;
+}
+
+tr:nth-child(even) {
+
+	background-color: #454529;
+}
