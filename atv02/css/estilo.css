@@ -30,7 +30,7 @@ tbody td:hover{
 	color: #66ff33;
 }
 
-tr:nth-child(even) {
+tr:nth-child(odd) {
 
 	background-color: #454529;
 }
