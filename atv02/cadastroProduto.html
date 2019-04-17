@@ -23,9 +23,10 @@
       <div id="container1">
 
           <h2>Dados do cadastro</h2>
-    <form method="post" action="validar.html">
 
-        <label for="nome">Nome   </label>
+    <form id="formulario" method="post" action="validar.html">
+
+        <label for="nome">Nome</label>
         <input type="text" name="nome" id="nome" placeholder="Nome da pessoa">
   
         <br>
@@ -46,6 +47,7 @@
         <br>
   
         <label for="origem">Produto</label>
+
        <select name="origem">
           <option value="1">Selecione:</option>
           <option value="2">Interno</option>
@@ -63,12 +65,7 @@
             <option value="4">Original</option>
             <option value="4">Skol</option>
           </select>
-  
-  
         <br>
-  
-       
-  
         <input type="submit" value="Cadastrar" name="cadastro">
         <input type="reset" value="Limpar">
   
