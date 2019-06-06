@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>01-corrida</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='stylesheet' href='../bootstrap-4.3.1-dist/css/bootstrap.min.css'>
+</head>
+
+<body>
+
+    <header>
+        <div class="bg-dark collapse" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4 class="text-white">Atividade 1</h4>
+                        <p class="text-muted">O objetivo desta aplicação é o desenvolvimento de uma interface para
+                            apurar resultados em provas
+                            de carrinhos de rolimã.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <button style="position: relative; left: 95%;" class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="resultado" style="display: none">
+        <div style="margin-top: 15%" class="container">
+            <table id="resulCorredores" class="table table-bordered ta table-secondary 
+            table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>Posição:</th>
+                    <th>Largada:</th>
+                    <th>Competidor:</th>
+                    <th>Tempo:</th>
+                    <th>Resultado:</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                <tfoot>
+
+                </tfoot>
+            </tbody>
+        </table>
+        </div>
+    </section>
+
+
+    <section>
+        <div style="margin-top:15%" class="container">
+                <h4 class="text-md-center"> Insira as informaçãoes necessárias dos corredores, 
+                        posição de largada, nome, tempo gasto no percurso.</h4>
+            <table id="corredores" class="table table-bordered ta table-secondary 
+            table-hover table-striped">
+                <thead class="thead-light th">
+                    <tr>
+                        <th>Largada</th>
+                        <th>Compotidor(a)</th>
+                        <th>Tempo</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th>
+                                Tabela de Competidores
+                            </th>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+            <form >
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="number" value="0;none"
+                        placeholder="Largada" id="largada" max="6" min="1">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="texto"
+                        placeholder="Nome" id="nome">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="number" step="any" value="0;none"
+                        placeholder="Tempo: sg" id="tempo">
+                    </div>
+                    <div class=" col-sm-2 col-md-1">
+                        <button id="inputBtn" onclick="AddTableRow()"
+                        type="button" class="btn btn-primary">Confimar</button>
+                    </div>
+                    <div class=" col-sm-2 col-md-1">
+                        <button id="inputBtn"onclick="FillTable()" 
+                        type="button" class="btn btn-primary">Champion</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+        <footer class="text-muted" style="margin-top:20%">
+            <div class="container">
+                <p class="float-right">
+                    <a href="#">Voltar ao topo</a>
+                </p>
+                <p>Atividade Prática 1 &copy; CSI477 – Sistemas para a WEB I</p>
+            </div>
+        </footer>
+    
+    <script src="../bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="jquery/corrida.js"></script>
+</body>
+
+</html>
