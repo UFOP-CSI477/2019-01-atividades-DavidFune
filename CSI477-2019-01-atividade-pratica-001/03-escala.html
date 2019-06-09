@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cáculo escala Richter</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='../bootstrap-4.3.1-dist/css/bootstrap.min.css'>
+</head>
+
+<body>
+    <header>
+        <div class="bg-dark collapse" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-8">
+                        <h4 class="text-white">Atividade 3</h4>
+                        <p class="text-muted">O objetivo desta aplicação é o desenvolvimento de uma interface para
+                            para apresentar o esfeitos de terremotos segungo o dados de A é a amplitude, ∆t é o
+                            intervalo de tempo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <button style="position: relative; left: 95%;" class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="jumbotron-fluid" style="margin-top: 20%">
+            <form style="position: relative;left:23%; margin-bottom: 5%">
+                <div class="row">
+                    <div class="col-3">
+                        <input class="form-control" type="number" value="0;none" step="any" placeholder="Amplitude: mm"
+                            id="amp">
+                    </div>
+                    <div class="col-3">
+                        <input class="form-control" type="number" step="any" placeholder="∆t" id="tempo">
+                    </div>
+                    <div class="col-1">
+                        <button id="inputBtn" style="position: relative; left:50%;" onclick="escala()" type="button"
+                            class="btn btn-primary">Confimar</button>
+                    </div>
+                </div>
+            </form>
+
+
+            <div class="album py-5" style="background-color:gray">
+                <div class="container" style="position: relative;left:20%;">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <div class="card mb-6 box-shadow">
+
+                                <img class="card-img-top" src="img/richter.png" alt="Card image cap">
+                                <p class="jumbotron"
+                                id="result" ></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../bootstrap-4.3.1-dist/js/jquery-3.4.1.min.js"></script>
+    <script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="jquery/escala.js"></script>
+</body>
+
+</html>

@@ -72,7 +72,7 @@ $(document).ready(function () {
                 $("#tempo").val(0);
 
         }else{
-            alert("Valores invalidos, digite corretamente");
+            alert("Formulário vazio, preencha os valores...");
         }
 
     };
