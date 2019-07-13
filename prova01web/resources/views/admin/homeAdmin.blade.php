@@ -12,7 +12,10 @@
              >Cadastrar Cliente</a> 
              <a type="button" 
             class="btn btn-default btn-lg btn-block" href='listar/clientes'
-             >Listar Clientes</a>                
+             >Listar Clientes</a>
+             <a type="button" 
+             class="btn btn-primary btn-lg btn-block" href='listar/tiposTrans'
+              >Listar Tipos de transações</a>                
     </div>
     
 @endsection
