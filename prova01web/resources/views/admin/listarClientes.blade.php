@@ -25,7 +25,7 @@
                                 <td >{{ $cliente['id'] }}</td>
                                 <td>{{ $cliente['name'] }}</td>
                                 <td>{{ $cliente['email'] }}</td>
-                            <td> <a href="trans/cliente/{{$cliente['id']}}/$cliente['name']"> Click </a></td>
+                            <td> <a href="trans/cliente/{{$cliente['id']}}"> Click </a></td>
                             </tr>
                         @endforeach
                         </tbody>

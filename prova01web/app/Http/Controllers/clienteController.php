@@ -18,7 +18,7 @@ class clienteController extends Controller
     {
         $trans = auth()->user()->trans;
         $tipos = Tipo::all();
-        return view('cliente.minhasTrans')->with('trans',$trans,'tipos',$tipos);
+        return view('cliente.minhasTrans')->with('trans',$trans);
     }
 
     /**
@@ -35,7 +35,8 @@ class clienteController extends Controller
     public function gravarTrans(Request $request){
 
         Tran::create($request->all());
-        redirect('minhas/trans');
+
+        return redirect('minhas/trans');
         
     }
 
