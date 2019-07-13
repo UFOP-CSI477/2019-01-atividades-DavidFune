@@ -5,7 +5,7 @@
                 <div class="ol-md-12">
                     @if ($trans==null)
                         <div class="alert alert-info">
-                            Não há Trasações cadastrada. {{$nome}}
+                            Não há Trasações cadastrada.
                         </div>
                     @else
                     <div class="card-header">Listagem de Transações</div>

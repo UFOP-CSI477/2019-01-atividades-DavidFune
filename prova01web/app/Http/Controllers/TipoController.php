@@ -14,9 +14,16 @@ class TipoController extends Controller
      */
     public function index()
     {
-        $tipos = Tipo::all();
-
-        return view('admin.listarTiposTrans')->with('tipos',$tipos);
+        if (auth()->user()->tipo_user==0) {
+            # code...
+            $tipos = Tipo::all();
+    
+            return view('admin.listarTiposTrans')->with('tipos',$tipos);
+            
+        } else {
+            # code...
+            return view('home');
+        }
     }
 
     
@@ -28,7 +35,13 @@ class TipoController extends Controller
      */
     public function create()
     {
-        return view('admin.inserirTiposTrans');
+        if (auth()->user()->tipo_user==0) {
+            # code...
+            return view('admin.inserirTiposTrans');
+        } else {
+            # code...
+            return view('home');
+        }
     }
 
     /**
@@ -39,12 +52,18 @@ class TipoController extends Controller
      */
     public function store(Request $request)
     {
-        Tipo::create($request->all());
-        session()->flash('Tipo de transação inserida com sucesso!');
-        $tipos = Tipo::all();
-
-        return redirect('listar/tiposTrans');
-        //return redirect()->route('admin.listarTiposTrans');
+        if (auth()->user()->tipo_user==0) {
+            # code...
+            Tipo::create($request->all());
+            session()->flash('Tipo de transação inserida com sucesso!');
+            $tipos = Tipo::all();
+    
+            return redirect('listar/tiposTrans');
+            //return redirect()->route('admin.listarTiposTrans');
+        } else {
+            # code...
+            return view('home');
+        }
     }
 
     /**
